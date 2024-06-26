@@ -36,6 +36,7 @@ class BaseModel:
     def save(self):
         """Updates updated_at with current time when instance is changed"""
         self.updated_at = datetime.now()
+        print(f"storage type {type(models.storage)}")
         models.storage.new(self)
         models.storage.save()
 
