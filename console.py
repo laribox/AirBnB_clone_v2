@@ -233,7 +233,6 @@ class HBNBCommand(cmd.Cmd):
                 return
             cls = HBNBCommand.classes[args]
             objects = storage.all(cls)
-            print(f"storage type {type(storage)}")
             for k, v in objects.items():
                     print_list.append(str(v))
         else:
