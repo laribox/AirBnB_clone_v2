@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Display states and there cities also filter by id 
+Display states and there cities also filter by id
 """
 
 from flask import Flask, render_template
