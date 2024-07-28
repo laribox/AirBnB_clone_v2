@@ -25,7 +25,7 @@ def c(text):
 
 
 @app.route('/python/<text>', strict_slashes=False)
-def python(text = "is cool"):
+def python(text="is cool"):
     """Return a given string"""
     return 'C {}'.format(text.replace("_", " "))
 
