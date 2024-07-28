@@ -26,9 +26,9 @@ def c(text):
 
 @app.route("/python/", defaults={'text': 'is cool'})
 @app.route('/python/<text>', strict_slashes=False)
-def python(text"):
+def python(text):
     """Return a given string"""
-    return 'C {}'.format(text.replace("_", " "))
+    return 'Python {}'.format(text.replace("_", " "))
 
 
 if __name__ == "__main__":
