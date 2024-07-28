@@ -5,6 +5,7 @@ from sqlalchemy import Column, String, Integer, Float, ForeignKey, Table
 from sqlalchemy.orm import relationship
 from os import getenv
 
+
 association_table = Table("place_amenity", Base.metadata,
                           Column("place_id", String(60),
                                  ForeignKey("places.id"),
@@ -40,6 +41,7 @@ class Place(BaseModel, Base):
                 if review.place_id == self.id:
                     review_list.append(review)
             return review_list
+
         @property
         def amenities(self):
             """Get/set linked Amenities."""
