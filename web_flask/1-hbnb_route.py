@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """A script that starts a flask web application"""
 
@@ -11,6 +10,7 @@ app = Flask(__name__)
 def hello():
     """Return a given string"""
     return ("Hello HBNB!")
+
 
 @app.route('/hbnb', strict_slashes=False)
 def hbnb():
