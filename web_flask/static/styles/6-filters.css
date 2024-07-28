@@ -57,6 +57,7 @@ ul {
 }
 
 li {
+	padding-left: 20px; /* Adjust the value as needed */
 }	
 
 h2 {
