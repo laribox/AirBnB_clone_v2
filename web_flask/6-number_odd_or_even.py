@@ -25,9 +25,9 @@ def c(text):
 
 
 @app.route('/python/<text>', strict_slashes=False)
-def python(text="is cool"):
+def python(text):
     """Return a given string"""
-    return 'C {}'.format(text.replace("_", " "))
+    return 'Python {}'.format(text.replace("_", " "))
 
 
 @app.route('/number/<int:n>', strict_slashes=False)
@@ -48,7 +48,7 @@ def html(n):
 def number_odd_or_even(n):
     """display n is a number only if n is an integer"""
     if isinstance(n, int):
-        return render_template("6-number_odd_or_even", n=n)
+        return render_template("6-number_odd_or_even.html", number=n)
 
 
 if __name__ == "__main__":
